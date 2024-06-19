@@ -18,6 +18,22 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/bio', function () {
+    return view('bio');
+});
+
+Route::get('/musica', function () {
+    return view('musica');
+});
+
+Route::get('/poesia', function () {
+    return view('poesia');
+});
+
+Route::get('/pensieri', function () {
+    return view('pensieri');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
